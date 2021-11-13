@@ -9,6 +9,10 @@ Conn(); //executa a func de conexao
 
 const port = 3000; //porta do node
 
+app.get("/", function (req, res) {
+  res.send('Proj Integração Back, Mongo e Heroku');
+})
+
 const paisesRouter = require("./routers/paises.routers");
 app.use("/paises", paisesRouter);
 
